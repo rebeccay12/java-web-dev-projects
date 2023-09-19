@@ -47,5 +47,17 @@ public class BaseDisc {
         this.discType = discType;
     }
 
+    void writeData(ArrayList<String> data){
+        this.contents = data;
+    }
 
+    public void readData(ArrayList<String> contents){
+        String newLine = System.lineSeparator();
+        for (String content: contents){
+            System.out.println(content);
+        }
+    }
+    public void clearData(){
+        this.contents = null;
+    }
 }
