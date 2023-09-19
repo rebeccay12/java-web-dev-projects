@@ -1,8 +1,10 @@
 package org.launchcode;
 
+import java.util.ArrayList;
+
 public class CD extends BaseDisc {
 
-    public CD(string, title, int storageCapacity, ArrayList<Sring> contents) {
+    public CD(String title, int storageCapacity, ArrayList<String> contents) {
         super(title, storageCapacity, contents, "Audio CD");
     }
     // TODO: Implement your custom interface.
@@ -12,7 +14,7 @@ public class CD extends BaseDisc {
 
 
     public void readData(){
-        String newLIne = System.lineSeparator();
+        String newLine = System.lineSeparator();
         System.out.println(this.getTitle() + "contains" + newLine + "MB of storage and contains");
         for (String content: this.getContents()){
             System.out.println(content);

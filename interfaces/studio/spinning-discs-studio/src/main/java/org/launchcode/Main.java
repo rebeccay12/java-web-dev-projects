@@ -12,7 +12,7 @@ public class Main {
                         "Rollover DJ",
                         "Look What You've Done")
                 );
-        CD getBorn = new CD ("Get Born", 500, getBornContents)
+        CD getBorn = new CD ("Get Born", 500, getBornContents);
 
         ArrayList<String> findingNemoContents = new ArrayList<>(
                 Arrays.AsList("New Parents",
@@ -23,7 +23,7 @@ public class Main {
                         "Nemo Lost",
                         "Meeting Dory")
         );
-        DVD findingNemo = new DVD("Finding Nemo", 4, findingNemoContents);
+        DVD findingNemo = new DVD ("Finding Nemo", 4, findingNemoContents);
         // TODO: Call each CD and DVD method to verify that they work as expected.
 
         getBorn.spinDisc();
